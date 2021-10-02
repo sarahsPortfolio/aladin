@@ -1,0 +1,382 @@
+/* usedSpaceShop.html */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'NanumSquare', sans-serif !important;
+  background: url(../images/bar.png) no-repeat;
+}
+#wrap{
+  width: 1024px;
+  margin: 0 auto;
+}
+header{
+  height: 160px;
+  display: inline-block;
+  /* padding: 5px; */
+}
+header #searchBook{
+  width: 360px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+header #searchBook input{
+  width: 300px;
+  height: 17px;
+  text-indent: 1em;
+  border: none;
+  float: left;
+}
+header #searchBook input:focus{
+  outline: none;
+}
+header #searchBook button{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  margin-top: -5px;
+}
+
+header #subMenu{
+  width: 350px;
+  height: 50px;
+  float: right;
+}
+header #subMenu ul{
+  margin-top: 10px;
+}
+header #subMenu li{
+  list-style: none;
+  width: 100px;
+  margin-right: 10px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 20px;
+  display: block;
+}
+header #subMenu li a{
+  color: white;
+}
+header #subMenu li.bg1{
+  background-image: url("../images/logIn.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li.bg2{
+  background-image: url("../images/signUp.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li.bg3{
+  background-image: url("../images/shoppingList.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li:last-child{
+  margin-right: 30px;
+}
+#title{
+  clear: both;
+  height: 70px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+#title h1{
+  text-align: center;
+}
+header nav{
+  height: 30px;
+  padding: 0 57px;
+}
+header nav ul{
+  height: 30px;
+}
+header nav ul li{
+  list-style: none;
+  float: left;
+  width: 130px;
+  line-height: 30px;
+  text-align: center;
+}
+header nav li a{
+  display: block;
+  height: 30px;
+  color: black;
+}
+header nav li a:hover{
+  background-color: #323e56;
+  color: white;
+}
+/* header 끝 */
+
+/* map 시작 */
+#map{
+  height: 100px;
+  background: url(../images/usedSpaceShop_mapBg.png) center center no-repeat;
+  text-align: center;
+  line-height: 100px;
+  background-size: 100%;
+  transition: ease 0.5s;
+}
+#map a{
+  height: 100px;
+  color: white;
+}
+#map:hover{
+  background-size: 130%;
+  transition: ease 2s;
+}
+#map a h2{
+  font-weight: lighter;
+}
+/* ㅡmap 끝 */
+
+/* findOfflineshop 시작 */
+#findOfflineshop{
+  padding: 50px 30px;
+}
+#findOfflineshop > h2{
+  display: block;
+  font-size: 1rem;
+  background-color: #ffe1b1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+#findOfflineshop .place{
+  margin-bottom: 60px;
+}
+#findOfflineshop .place .title_h3{
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+/* #findOfflineshop .place .title_h3 .shopIcon{
+  width: 30px;
+  height: 30px;
+  background: url(../images/usedBook_mapIcon.png) no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+} */
+#findOfflineshop .place .title_h3 h3{
+  line-height: 35px;
+}
+#findOfflineshop .place ul{
+  list-style: none;
+  height: 300px;
+}
+#findOfflineshop .place ul li{
+  width: 180px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: small;
+}
+#findOfflineshop .place ul li:nth-child(5n){
+  margin-right: 0;
+}
+#findOfflineshop .place ul li a{
+  color: #333;
+  width: 180px;
+  height: 40px;
+  display: block;
+  border-radius: 15px;
+}
+#findOfflineshop .place ul li a:hover{
+  color: white;
+  background-color: #ee3d96;
+}
+
+
+#findOfflineshop .place .stateHeight{
+  height: 200px;
+}
+#findOfflineshop p{
+  font-size: small;
+}
+
+/* findOfflineshop 끝 */
+
+/* spaceShopBanner 시작 */
+#spaceShopBanner{
+  height: 150px;
+  background: url(../images/spaceShopBanner.png) no-repeat;
+}
+/* spaceShopBanner 끝 */
+
+/* saleBook 시작*/
+.bookList{
+  margin-top: 100px;
+}
+.bookList  h2{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+}
+.bookList ul{
+  height: 190px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.bookList ul li{
+  width: 137px;
+  height: 190px;
+  background-color: thistle;
+  text-indent: -9999px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.bookList ul li:last-child{
+  margin-right: 0;
+}
+.bookList ul li a{
+  width: 137px;
+  height: 190px;
+  display: block;
+}
+.bookList .arrowBg{
+  height: 80px;
+  background: url(../images/arrowBg.png) no-repeat;
+  position: relative;
+}
+.bookList .arrowBg span{
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+.bookList .arrowBg .left{
+  left: 300px;
+  background: url(../images/leftBtn.png) no-repeat;
+}
+.bookList .arrowBg .right{
+  right: 300px;
+  background: url(../images/rightBtn.png) no-repeat;
+}
+#saleBook ul li:nth-child(1){
+  background: url(../images/saleBook_thum_1.png) no-repeat;
+}
+#saleBook ul li:nth-child(2){
+  background: url(../images/saleBook_thum_2.png) no-repeat;
+}
+#saleBook ul li:nth-child(3){
+  background: url(../images/saleBook_thum_3.png) no-repeat;
+}
+#saleBook ul li:nth-child(4){
+  background: url(../images/saleBook_thum_4.png) no-repeat;
+}
+#saleBook ul li:nth-child(5){
+  background: url(../images/saleBook_thum_5.png) no-repeat;
+}
+#saleBook ul li:nth-child(6){
+  background: url(../images/saleBook_thum_6.png) no-repeat;
+}
+#saleBook ul li:nth-child(7){
+  background: url(../images/saleBook_thum_7.png) no-repeat;
+}
+#soldOut{
+  margin-bottom: 100px;
+}
+#soldOut ul li:nth-child(1){
+  background: url(../images/soldOut_thum_1.png) no-repeat;
+}
+#soldOut ul li:nth-child(2){
+  background: url(../images/soldOut_thum_2.png) no-repeat;
+}
+#soldOut ul li:nth-child(3){
+  background: url(../images/soldOut_thum_3.png) no-repeat;
+}
+#soldOut ul li:nth-child(4){
+  background: url(../images/soldOut_thum_4.png) no-repeat;
+}
+#soldOut ul li:nth-child(5){
+  background: url(../images/soldOut_thum_5.png) no-repeat;
+}
+#soldOut ul li:nth-child(6){
+  background: url(../images/soldOut_thum_6.png) no-repeat;
+}
+#soldOut ul li:nth-child(7){
+  background: url(../images/soldOut_thum_7.png) no-repeat;
+}
+/* saleBook 끝*/
+
+/* footer 시작 */
+footer{
+  clear: both;
+  background: url(../images/footer_bg.png) no-repeat;
+}
+#footCompany{
+  border-top: 1px solid #aaa;
+  padding-top: 45px;
+  height: 190px;
+}
+#footCompany #title{
+  width: 220px;
+  margin-left: 60px;
+  float: left;
+}
+#footCompany #company{
+  width: 220px;
+  float: left;
+}
+#footCompany dt{
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #555;
+}
+#footCompany dd{
+  font-size: small;
+  line-height: 1.8em;
+}
+#footCompany a{
+  text-decoration: none;
+  color: #555;
+}
+
+#footCompany #info{
+  width: 280px;
+  float: left;
+}
+footer #sns ul{
+  width: 180px;
+  height: 50px;
+  float: left;
+  list-style: none;
+}
+footer #sns ul li{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
+}
+#address{
+  margin-top: 40px;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  padding-bottom: 30px;
+}

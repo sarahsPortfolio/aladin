@@ -1,0 +1,699 @@
+/* blurayDvd.html */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'NanumSquare', sans-serif !important;
+  background: url(../images/bar.png) no-repeat;
+}
+#wrap{
+  width: 1024px;
+  margin: 0 auto;
+}
+header{
+  height: 160px;
+  display: inline-block;
+  /* padding: 5px; */
+}
+header #searchBook{
+  width: 360px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+header #searchBook input{
+  width: 300px;
+  height: 17px;
+  text-indent: 1em;
+  border: none;
+  float: left;
+}
+header #searchBook input:focus{
+  outline: none;
+}
+header #searchBook button{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  margin-top: -5px;
+}
+
+header #subMenu{
+  width: 350px;
+  height: 50px;
+  float: right;
+}
+header #subMenu ul{
+  margin-top: 10px;
+}
+header #subMenu li{
+  list-style: none;
+  width: 100px;
+  margin-right: 10px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 20px;
+  display: block;
+}
+header #subMenu li a{
+  color: white;
+}
+header #subMenu li.bg1{
+  background-image: url("../images/logIn.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li.bg2{
+  background-image: url("../images/signUp.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li.bg3{
+  background-image: url("../images/shoppingList.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li:last-child{
+  margin-right: 30px;
+}
+#title{
+  clear: both;
+  height: 70px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+#title h1{
+  text-align: center;
+}
+header nav{
+  height: 30px;
+  padding: 0 57px;
+}
+header nav ul{
+  height: 30px;
+}
+header nav ul li{
+  list-style: none;
+  float: left;
+  width: 130px;
+  line-height: 30px;
+  text-align: center;
+}
+header nav li a{
+  display: block;
+  height: 30px;
+  color: black;
+}
+header nav li a:hover{
+  background-color: #323e56;
+  color: white;
+}
+/* header 끝 */
+
+/* recentMusic 시작 */
+#recentMusic{
+  padding: 50px 0;
+}
+#recentMusic #recentMusicHead{
+  height: 40px;
+  display: flex;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+#recentMusic #recentMusicHead > h2{
+  margin-right: 100px;
+}
+#recentMusic #recentMusicHead #smallNav{
+  list-style: none;
+  display: flex;
+}
+#recentMusic #recentMusicHead #smallNav li{
+  height: 30px;
+  margin-right: 30px;
+  margin-top: 6px;
+}
+#recentMusic #recentMusicHead #smallNav li a{
+  color: black;
+}
+#recentMusic #recentMusicHead #smallNav li a:hover{
+  color: white;
+  background-color: #333;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+#recentMusic #newMusicList{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 155px);
+  grid-template-rows: repeat(2, 155px);
+  grid-column-gap: 18px;
+  grid-row-gap: 18px;
+}
+#recentMusic #newMusicList li{
+  width: 155px;
+  height: 155px;
+  margin-right: 18px;
+  background-color: turquoise;
+  border-radius: 10px;
+  text-indent: -9999px;
+}
+#recentMusic #newMusicList li:nth-child(1){
+  background: url(../images/newMusicList_thum1.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(1):hover{
+  background: url(../images/newMusicList_thum1_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(2){
+  background: url(../images/newMusicList_thum2.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(2):hover{
+  background: url(../images/newMusicList_thum2_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(3){
+  background: url(../images/newMusicList_thum3.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(3):hover{
+  background: url(../images/newMusicList_thum3_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(4){
+  background: url(../images/newMusicList_thum4.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(4):hover{
+  background: url(../images/newMusicList_thum4_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(5){
+  background: url(../images/newMusicList_thum5.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(5):hover{
+  background: url(../images/newMusicList_thum5_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(6){
+  background: url(../images/newMusicList_thum6.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(6):hover{
+  background: url(../images/newMusicList_thum6_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(7){
+  background: url(../images/newMusicList_thum7.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(7):hover{
+  background: url(../images/newMusicList_thum7_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(8){
+  background: url(../images/newMusicList_thum8.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(8):hover{
+  background: url(../images/newMusicList_thum8_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(9){
+  background: url(../images/newMusicList_thum9.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(9):hover{
+  background: url(../images/newMusicList_thum9_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(10){
+  background: url(../images/newMusicList_thum10.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(10):hover{
+  background: url(../images/newMusicList_thum10_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(11){
+  background: url(../images/newMusicList_thum11.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(11):hover{
+  background: url(../images/newMusicList_thum11_hover.png) no-repeat;
+}
+#recentMusic #newMusicList li:nth-child(12){
+  background: url(../images/newMusicList_thum12.png) no-repeat;
+  transition: ease 0.5s;
+}
+#recentMusic #newMusicList li:nth-child(12):hover{
+  background: url(../images/newMusicList_thum12_hover.png) no-repeat;
+}
+/* recentMusic 끝 */
+
+/* realTimeChart 시작 */
+#realTimeChart{
+  margin-top: 50px;
+}
+#realTimeChart #chartHead{
+  padding: 10px 0;
+  height: 100px;
+}
+#realTimeChart #chartHead > h2{
+  float: left;
+}
+#realTimeChart #chartHead > .today{
+  float: right;
+  display: flex;
+  margin-top: 60px;
+  margin-right: 10px;
+}
+#realTimeChart #chartHead > .today .date{
+  margin-right: 10px;
+}
+#realTimeChart #chartHead > .today button{
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  border: none;
+  background: url(../images/refreshIcon.png) no-repeat;
+  cursor: pointer;
+}
+
+#realTimeChart .chartSize{
+  width: 341px;
+  float: left;
+  margin-bottom: 50px;
+}
+.chartSize table{
+  width: 341px;
+  border-collapse: collapse;
+}
+.chartSize table tr{
+  width: 341px;
+  height: 47px;
+}
+.chartSize table tr .theadTd{
+  border-top: 2px solid #f067a6;
+  border-bottom: 2px solid #f067a6;
+  background-color: #f067a6;
+  color: white;
+  text-align: center;
+}
+.chartSize table tr td{
+  height: 47px;
+  border-bottom: 1px solid #ccc;
+}
+.chartSize table tr .thumnail{
+  width: 50px;
+  padding: 3px 5px;
+  text-indent: -9999px;
+  border: 1px solid #ccc;
+}
+.chartSize table tr .thumnail a{
+  width: 50px;
+  height: 40px;
+  display: block;
+}
+.chartSize table tr .recordChart_thum1{
+  background: url(../images/recordChart_thum1.png) no-repeat center center;
+}
+.chartSize table tr .recordChart_thum2{
+  background: url(../images/recordChart_thum2.png) no-repeat center center;
+}
+.chartSize table tr .recordChart_thum3{
+  background: url(../images/recordChart_thum3.png) no-repeat center center;
+}
+.chartSize table tr .recordChart_thum4{
+  background: url(../images/recordChart_thum4.png) no-repeat center center;
+}
+.chartSize table tr .recordChart_thum5{
+  background: url(../images/recordChart_thum5.png) no-repeat center center;
+}
+.chartSize table tr .recordChart_thum6{
+  background: url(../images/recordChart_thum6.png) no-repeat center center;
+}
+.chartSize table tr .recordChart_thum7{
+  background: url(../images/recordChart_thum7.png) no-repeat center center;
+}
+.chartSize table tr .recordChart_thum8{
+  background: url(../images/recordChart_thum8.png) no-repeat center center;
+}
+.chartSize table tr .recordChart_thum9{
+  background: url(../images/recordChart_thum9.png) no-repeat center center;
+}
+.chartSize table tr .recordChart_thum10{
+  background: url(../images/recordChart_thum10.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum1{
+  background: url(../images/dvdChart_thum1.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum2{
+  background: url(../images/dvdChart_thum2.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum3{
+  background: url(../images/dvdChart_thum3.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum4{
+  background: url(../images/dvdChart_thum4.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum5{
+  background: url(../images/dvdChart_thum5.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum6{
+  background: url(../images/dvdChart_thum6.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum7{
+  background: url(../images/dvdChart_thum7.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum8{
+  background: url(../images/dvdChart_thum8.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum9{
+  background: url(../images/dvdChart_thum9.png) no-repeat center center;
+}
+.chartSize table tr .dvdChart_thum10{
+  background: url(../images/dvdChart_thum10.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum1{
+  background: url(../images/blurayChart_thum1.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum2{
+  background: url(../images/blurayChart_thum2.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum3{
+  background: url(../images/blurayChart_thum3.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum4{
+  background: url(../images/blurayChart_thum4.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum5{
+  background: url(../images/blurayChart_thum5.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum6{
+  background: url(../images/blurayChart_thum6.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum7{
+  background: url(../images/blurayChart_thum7.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum8{
+  background: url(../images/blurayChart_thum8.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum9{
+  background: url(../images/blurayChart_thum9.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum10{
+  background: url(../images/blurayChart_thum10.png) no-repeat center center;
+}
+.chartSize table tr .blurayChart_thum1{
+  background: url(../images/blurayChart_thum1.png) no-repeat center center;
+}
+.chartSize table tr .musicInfo{
+  width: 201px;
+  font-size: small;
+}
+.chartSize table tr .musicInfo a{
+  width: 201px;
+  display: block;
+  color: black;
+}
+.chartSize table tr .musicInfo .padding1{
+  padding: 0 6px;
+  margin-top: 5px;
+}
+.chartSize table tr .musicInfo .padding2{
+  padding-left:20px;
+  margin-top: 5px;
+}
+.chartSize table tr .play{
+  width: 30px;
+  margin-left: 10px;
+  background: url(../images/play_icon.png) no-repeat center center;
+}
+.chartSize table tr .play a{
+  width: 30px;
+  display: block;
+  text-indent: -9999px;
+}
+.chartSize table tr .more{
+  width: 30px;
+  margin: 0 9px;
+  background: url(../images/more_icon.png) no-repeat center center;
+}
+.chartSize table tr .more a{
+  width: 30px;
+  display: block;
+  text-indent: -9999px;
+}
+/* realTimeChart끝 */
+
+/* advertisement 시작 */
+#advertisement{
+  clear: both;
+  height: 100px;
+  background: url(../images/bluraydvdAdvertisement.png) no-repeat;
+  margin-bottom: 50px;
+}
+#advertisement a{
+  height: 100px;
+  display: block;
+  text-indent: -9999px;
+}
+/* advertisement 끝 */
+
+/* recordArea시작 */
+.titleArea{
+  height: 130px;
+  background: url(../images/titleArea_bg.png) no-repeat;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.titleArea h2{
+  width: 400px;
+  height: 100px;
+  font-size: 3rem;
+  line-height: 100px;
+  font-weight: bold;
+  color: white;
+
+}
+.titleArea .listNav ul{
+  width: 200px;
+  list-style: none;
+  display: flex;
+	flex-wrap: wrap;
+  margin-top: 20px;
+}
+.titleArea .listNav ul li{
+  width: 100px;
+  height: 25px;
+  /* text-align: center; */
+  line-height: 25px;
+  letter-spacing: 3px;
+  padding-left: 15px;
+}
+.titleArea .listNav ul li:nth-child(4){
+  border-left: 1px solid white;
+}
+.titleArea .listNav ul li a{
+  width: 100px;
+  height: 25px;
+  color: white;
+}
+.titleArea .listNav ul li a:hover{
+  font-weight: bold;
+}
+.listArea{
+  padding: 60px 0;
+  height: 280px;
+}
+.listArea ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.listArea ul li{
+  width: 127px;
+  height: 167px;
+  margin-right: 10px;
+}
+.listArea ul li a{
+  color: black;
+}
+.listArea ul li div{
+  width: 127px;
+  height: 127px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-indent: -9999px;
+}
+.listArea ul li .record_listArea_thum1{
+  background: url(../images/record_listArea_thum1.png) no-repeat;
+}
+.listArea ul li .record_listArea_thum2{
+  background: url(../images/record_listArea_thum2.png) no-repeat;
+}
+.listArea ul li .record_listArea_thum3{
+  background: url(../images/record_listArea_thum3.png) no-repeat;
+}
+.listArea ul li .record_listArea_thum4{
+  background: url(../images/record_listArea_thum4.png) no-repeat;
+}
+.listArea ul li .record_listArea_thum5{
+  background: url(../images/record_listArea_thum5.png) no-repeat;
+}
+.listArea ul li .record_listArea_thum6{
+  background: url(../images/record_listArea_thum6.png) no-repeat;
+}
+.listArea ul li .record_listArea_thum7{
+  background: url(../images/record_listArea_thum7.png) no-repeat;
+}
+
+.listArea ul li .dvd_listArea_thum1{
+  background: url(../images/dvd_listArea_thum1.png) no-repeat;
+}
+.listArea ul li .dvd_listArea_thum2{
+  background: url(../images/dvd_listArea_thum2.png) no-repeat;
+}
+.listArea ul li .dvd_listArea_thum3{
+  background: url(../images/dvd_listArea_thum3.png) no-repeat;
+}
+.listArea ul li .dvd_listArea_thum4{
+  background: url(../images/dvd_listArea_thum4.png) no-repeat;
+}
+.listArea ul li .dvd_listArea_thum5{
+  background: url(../images/dvd_listArea_thum5.png) no-repeat;
+}
+.listArea ul li .dvd_listArea_thum6{
+  background: url(../images/dvd_listArea_thum6.png) no-repeat;
+}
+.listArea ul li .dvd_listArea_thum7{
+  background: url(../images/dvd_listArea_thum7.png) no-repeat;
+}
+
+.listArea ul li .bluray_listArea_thum1{
+  background: url(../images/bluray_listArea_thum1.png) no-repeat;
+}
+.listArea ul li .bluray_listArea_thum2{
+  background: url(../images/bluray_listArea_thum2.png) no-repeat;
+}
+.listArea ul li .bluray_listArea_thum3{
+  background: url(../images/bluray_listArea_thum3.png) no-repeat;
+}
+.listArea ul li .bluray_listArea_thum4{
+  background: url(../images/bluray_listArea_thum4.png) no-repeat;
+}
+.listArea ul li .bluray_listArea_thum5{
+  background: url(../images/bluray_listArea_thum5.png) no-repeat;
+}
+.listArea ul li .bluray_listArea_thum6{
+  background: url(../images/bluray_listArea_thum6.png) no-repeat;
+}
+.listArea ul li .bluray_listArea_thum7{
+  background: url(../images/bluray_listArea_thum7.png) no-repeat;
+}
+
+.listArea ul li div a{
+  width: 127px;
+  height: 127px;
+  display: block;
+}
+.listArea ul li p{
+  width: 127px;
+  height: 30px;
+  font-size: small;
+  text-align: center;
+  color: black;
+  line-height: 15px;
+}
+.listArea ul li p a:hover{
+  font-weight: bold;
+  color: #ee3d96;
+}
+.listArea ul li:last-child{
+  margin-right: 0px;
+}
+.listArea .btn{
+  display: flex;
+  justify-content: space-between;
+  text-indent: -9999px;
+  margin-top: -100px;
+}
+.listArea .btn .left{
+  width: 30px;
+  height: 30px;
+  background: url(../images/leftBtn.png) no-repeat;
+}
+.listArea .btn .right{
+  width: 30px;
+  height: 30px;
+  background: url(../images/rightBtn.png) no-repeat;
+}
+/* recordArea끝 */
+
+
+
+/* footer시작 */
+footer{
+  clear: both;
+  margin-top: 50px;
+  background: url(../images/footer_bg.png) no-repeat;
+  padding: 0 30px;
+}
+#footCompany{
+  border-top: 1px solid #aaa;
+  padding-top: 45px;
+  height: 190px;
+}
+#footCompany #title{
+  width: 220px;
+  margin-left: 60px;
+  float: left;
+}
+#footCompany #company{
+  width: 220px;
+  float: left;
+}
+#footCompany dt{
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #555;
+}
+#footCompany dd{
+  font-size: small;
+  line-height: 1.8em;
+}
+#footCompany a{
+  text-decoration: none;
+  color: #555;
+}
+
+#footCompany #info{
+  width: 280px;
+  float: left;
+}
+footer #sns ul{
+  width: 180px;
+  height: 50px;
+  float: left;
+  list-style: none;
+}
+footer #sns ul li{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
+}
+#address{
+  margin-top: 40px;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* footer끝 */

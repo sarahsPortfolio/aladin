@@ -1,0 +1,407 @@
+/* usedProduct.html */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'NanumSquare', sans-serif !important;
+  background: url(../images/bar.png) no-repeat;
+}
+#wrap{
+  width: 1024px;
+  margin: 0 auto;
+}
+header{
+  height: 160px;
+  display: inline-block;
+  /* padding: 5px; */
+}
+header #searchBook{
+  width: 360px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+header #searchBook input{
+  width: 300px;
+  height: 17px;
+  text-indent: 1em;
+  border: none;
+  float: left;
+}
+header #searchBook input:focus{
+  outline: none;
+}
+header #searchBook button{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  margin-top: -5px;
+}
+
+header #subMenu{
+  width: 350px;
+  height: 50px;
+  float: right;
+}
+header #subMenu ul{
+  margin-top: 10px;
+}
+header #subMenu li{
+  list-style: none;
+  width: 100px;
+  margin-right: 10px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 20px;
+  display: block;
+}
+header #subMenu li a{
+  color: white;
+}
+header #subMenu li.bg1{
+  background-image: url("../images/logIn.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li.bg2{
+  background-image: url("../images/signUp.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li.bg3{
+  background-image: url("../images/shoppingList.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li:last-child{
+  margin-right: 30px;
+}
+#title{
+  clear: both;
+  height: 70px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+#title h1{
+  text-align: center;
+}
+header nav{
+  height: 30px;
+  padding: 0 57px;
+}
+header nav ul{
+  height: 30px;
+}
+header nav ul li{
+  list-style: none;
+  float: left;
+  width: 130px;
+  line-height: 30px;
+  text-align: center;
+}
+header nav li a{
+  display: block;
+  height: 30px;
+  color: black;
+}
+header nav li a:hover{
+  background-color: #323e56;
+  color: white;
+}
+/* header 끝 */
+
+
+/* #recommend 시작 */
+#recommend{
+  height: 500px;
+  background: url(../images/usedProduct_bg.png) no-repeat;
+  position: relative;
+}
+#recommend h2{
+  color: white;
+  font-size: 2em;
+  line-height: 500px;
+  margin-left: 80px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 3px #12173e;;
+}
+#recommend #banner{
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+#recommend #banner ul{
+  list-style: none;
+  width: 639px;
+  height: 454px;
+}
+#recommend #banner ul li{
+  width: 639px;
+  height: 454px;
+}
+#recommend #banner ul li:nth-child(1){
+  background: url(../images/usedProduct_banner_2.png) no-repeat;
+}
+/* #recommend #banner ul li:nth-child(2){
+  background: url(../images/usedProduct_banner_1.png) no-repeat;
+} */
+/* #recommend 끝 */
+
+/* #usedBook 시작 */
+#usedBook{
+  height: 600px;
+  padding: 202px 75px;
+  background: url(../images/usedProduct_bg_1.png) no-repeat;
+}
+#usedBook #title{
+  width: 196px;
+  height: 196px;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  display: inline-block;
+}
+#usedBook #title .bar{
+  width: 45px;
+  height: 1px;
+  border: 1px solid white;
+  margin-top: 40px;
+}
+#usedBook #title p{
+  margin-top: 40px;
+  font-size: small;
+  line-height: 1.5em;
+}
+#usedBook #kategorie{
+  width: 646px;
+  height: 196px;
+  display: inline-block;
+  padding: 45px 10px 45px 130px;
+}
+#usedBook #kategorie ul{
+  list-style: none;
+  
+}
+#usedBook #kategorie ul li{
+  width: 60px;
+  height: 106px;
+  float: left;
+  margin-right: 51px;
+}
+#usedBook #kategorie ul li:last-child{
+  margin-right: 0;
+}
+#usedBook #kategorie ul li a{
+  width: 60px;
+  height: 106px;
+  color: black;
+}
+#usedBook #kategorie ul li a{
+  height: 60px;
+  margin-bottom: 21px;
+}
+#usedBook #kategorie ul li a img{
+  height: 60px;
+  margin-bottom: 21px;
+}
+#usedBook #kategorie ul li a p{
+  height: 25px;
+  text-align: center;
+  border-top: 1px solid #925639;
+  border-bottom: 1px solid #925639;
+  line-height: 25px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+/* #usedBook 끝 */
+
+/* #record 시작 */
+#record{
+  clear: both;
+  height: 600px;
+  background-color: #39545c;
+  padding: 44px 0;
+  overflow: hidden;
+}
+#record .box{
+  width: 757px;
+  height: 150px;
+  margin-bottom: 30px;
+  transform: translateX(-557px);
+  transition: 0.5s ease-in;
+}
+#record .box:hover{
+  transform: translateX(0);
+}
+#record .box a {
+  width: 757px;
+  height: 150px;
+}
+#record .box a div{
+  width: 757px;
+  height: 150px;
+  margin-right: 80px;
+  float: left;
+}
+#record .box .poster1{
+  background: url("../images/bluRay.png") no-repeat;
+}
+#record .box .poster2{
+  background: url("../images/music.png") no-repeat;
+}
+#record .box .poster3{
+  background: url("../images/dvd.png") no-repeat;
+}
+#record .box img{
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 60px;
+}
+#record .box p{
+  display: inline-block;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 150px;
+}
+
+
+
+
+
+
+
+/* #record 끝 */
+
+/* #sale 시작 */
+#sale{
+  clear: both;
+  height: 850px;
+  background: url(../images/usedProduct_bg_3.png) no-repeat;
+  padding: 100px 30px;
+  position: relative;
+}
+#sale h2{
+  color: white;
+  text-align: center;
+}
+#sale .saleInfo{
+  width: 873px;
+  height: 150px;
+  background: url(../images/sale_info.png);
+  margin: 99px auto;
+  margin-bottom: 130px;
+}
+#search form, fieldset{
+  border: none;
+}
+#search #box{
+  width: 420px;
+  height: 45px;
+  border: 1px solid white;
+  margin: 50px auto;
+  border-radius: 22px;
+  padding: 3px;
+  background-color: white;
+}
+#box input{
+  text-indent: 1em;
+  width: 360px;
+  height: 40px;
+  float: left;
+  border: none;
+  border-radius: 20px;
+}
+#box input:focus{
+outline: none;
+}
+#box button{
+  width: 40px;
+  height: 38px;
+  float: left;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+#sale #text{
+  position: absolute;
+  left: 300px;
+  color: white;
+  line-height: 1.5em;
+  font-size: small;
+}
+/* #sale 끝 */
+
+
+
+/* footer 시작 */
+footer{
+  clear: both;
+  background: url(../images/footer_bg.png) no-repeat;
+  padding: 0 30px;
+}
+#footCompany{
+  border-top: 1px solid #aaa;
+  padding-top: 45px;
+  height: 190px;
+}
+#footCompany #title{
+  width: 220px;
+  margin-left: 60px;
+  float: left;
+}
+#footCompany #company{
+  width: 220px;
+  float: left;
+}
+#footCompany dt{
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #555;
+}
+#footCompany dd{
+  font-size: small;
+  line-height: 1.8em;
+}
+#footCompany a{
+  text-decoration: none;
+  color: #555;
+}
+
+#footCompany #info{
+  width: 280px;
+  float: left;
+}
+footer #sns ul{
+  width: 180px;
+  height: 50px;
+  float: left;
+  list-style: none;
+}
+footer #sns ul li{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
+}
+#address{
+  margin-top: 40px;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  padding-bottom: 30px;
+}

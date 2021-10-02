@@ -1,0 +1,518 @@
+/* electroAudio.html */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: 'NanumSquare', sans-serif !important;
+  background: url(../images/bar.png) no-repeat;
+}
+#wrap{
+  width: 1024px;
+  margin: 0 auto;
+}
+header{
+  height: 160px;
+  display: inline-block;
+  /* padding: 5px; */
+}
+header #searchBook{
+  width: 360px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+header #searchBook input{
+  width: 300px;
+  height: 17px;
+  text-indent: 1em;
+  border: none;
+  float: left;
+}
+header #searchBook input:focus{
+  outline: none;
+}
+header #searchBook button{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  margin-top: -5px;
+}
+
+header #subMenu{
+  width: 350px;
+  height: 50px;
+  float: right;
+}
+header #subMenu ul{
+  margin-top: 10px;
+}
+header #subMenu li{
+  list-style: none;
+  width: 100px;
+  margin-right: 10px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 20px;
+  display: block;
+}
+header #subMenu li a{
+  color: white;
+}
+header #subMenu li.bg1{
+  background-image: url("../images/logIn.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li.bg2{
+  background-image: url("../images/signUp.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li.bg3{
+  background-image: url("../images/shoppingList.png");
+  background-repeat: no-repeat;
+}
+header #subMenu li:last-child{
+  margin-right: 30px;
+}
+#title{
+  clear: both;
+  height: 70px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+#title h1{
+  text-align: center;
+}
+header nav{
+  height: 30px;
+  padding: 0 57px;
+}
+header nav ul{
+  height: 30px;
+}
+header nav ul li{
+  list-style: none;
+  float: left;
+  width: 130px;
+  line-height: 30px;
+  text-align: center;
+}
+header nav li a{
+  display: block;
+  height: 30px;
+  color: black;
+}
+header nav li a:hover{
+  background-color: #323e56;
+  color: white;
+}
+/* header 끝 */
+
+/* banner시작 */
+#banner{
+  height: 600px;
+  background: url(../images/electAudio_banner_bg.png) no-repeat;
+  padding: 50px 30px;
+}
+#banner #choiceIcon{
+  width: 70px;
+  height: 30px;
+}
+#banner #choiceIcon .icon{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  float: left;
+  text-indent: -9999px;
+}
+#banner #choiceIcon .icon a{
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+#banner #choiceIcon .audioIcon{
+  background: url(../images/electAudio_icon_1.png) no-repeat;
+}
+#banner #choiceIcon .audioIcon:hover{
+  background: url(../images/electAudio_icon_1_visited.png) no-repeat;
+}
+#banner #choiceIcon .phoneIcon{
+  margin-right: 0;
+  background: url(../images/electAudio_icon_2.png) no-repeat;
+}
+#banner #choiceIcon .phoneIcon:hover{
+  margin-right: 0;
+  background: url(../images/electAudio_icon_2_visited.png) no-repeat;
+}
+#banner #bannerList{
+  clear: both;
+  margin-top: 50px;
+  height: 146px;
+}
+#banner #bannerList #bestList{
+  margin-left: 80px;
+  height: 146px;
+}
+#banner #bannerList #bestList .best_title{
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  width: 130px;
+  height: 52px;
+  display: block;
+  background: url(../images/electAudio_title_bestseller.png) no-repeat;
+  color: white;
+  font-weight: bold;
+  line-height: 37px;
+  text-align: center;
+}
+#banner #bannerList #bestList ul{
+  list-style: none;
+  display: flex;
+  float: left;
+}
+#banner #bannerList #bestList ul li{
+  width: 100px;
+  height: 146px;
+  margin-right: 34px;
+  box-shadow: 3px 3px 4px #999;
+  text-indent: -9999px;
+}
+#banner #bannerList #bestList ul li a{
+  display: block;
+  width: 100px;
+  height: 146px;
+}
+#banner #bannerList #bestList ul li:hover{
+  transform: translateY(-20px);
+  transition: ease 0.5s;
+}
+#banner #bannerList #bestList ul li:nth-child(1){
+  background: url(../images/electAudio_banner_bestSeller_1.png) no-repeat;
+}
+#banner #bannerList #bestList ul li:nth-child(2){
+  background: url(../images/electAudio_banner_bestSeller_2.png) no-repeat;
+}
+#banner #bannerList #bestList ul li:nth-child(3){
+  background: url(../images/electAudio_banner_bestSeller_3.png) no-repeat;
+}
+#banner #bannerList #bestList ul li:nth-child(4){
+  background: url(../images/electAudio_banner_bestSeller_4.png) no-repeat;
+}
+#banner #bannerList #bestList ul li:nth-child(5){
+  background: url(../images/electAudio_banner_bestSeller_5.png) no-repeat;
+}
+
+#banner #bannerList #newList{
+  clear: both;
+  margin-top: 85px;
+  height: 146px;
+}
+#banner #bannerList #newList .new_title{
+  width: 130px;
+  height: 52px;
+  display: block;
+  background: url(../images/electAudio_title_newbook.png) no-repeat;
+  color: white;
+  font-weight: bold;
+  line-height: 37px;
+  text-align: center;
+  margin-left: 20px;
+  float: left;
+  margin-top: 30px;
+}
+#banner #bannerList #newList ul{
+  float: right;
+  margin-right: 95px;
+  display: flex;
+  list-style: none;
+}
+#banner #bannerList #newList ul li{
+  width: 100px;
+  height: 146px;
+  margin-left: 34px;
+  text-indent: -9999px;
+  box-shadow: 3px 3px 4px #999;
+}
+#banner #bannerList #newList ul li:hover{
+  transform: translateY(-20px);
+  transition: ease 0.5s;
+}
+#banner #bannerList #newList ul li a{
+  width: 100px;
+  height: 146px;
+  display: block;
+}
+#banner #bannerList #newList ul li:nth-child(1){
+  background: url(../images/electAudio_banner_newbook_1.png) no-repeat;
+}
+#banner #bannerList #newList ul li:nth-child(2){
+  background: url(../images/electAudio_banner_newbook_2.png) no-repeat;
+}
+#banner #bannerList #newList ul li:nth-child(3){
+  background: url(../images/electAudio_banner_newbook_3.png) no-repeat;
+}
+#banner #bannerList #newList ul li:nth-child(4){
+  background: url(../images/electAudio_banner_newbook_4.png) no-repeat;
+}
+#banner #bannerList #newList ul li:nth-child(5){
+  background: url(../images/electAudio_banner_newbook_5.png) no-repeat;
+}
+
+
+/* banner 끝 */
+
+/* choiceBook 시작 */
+#choiceBook{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+#choiceBook .choiceBox{
+  width: 200px;
+  height: 70px;
+  display: flex;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 70px;
+  justify-content: center;
+  text-align: center;
+}
+#choiceBook .choiceBox a{
+  color: black;
+  display: block;
+  width: 200px;
+  height: 70px;
+}
+#choiceBook .choiceBox a:hover{
+  border-radius: 10px;
+  background-color: #272e3c;
+  color: white;
+  display: block;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+}
+/* choiceBook 끝 */
+
+/* content 시작 */
+#content{
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+#content .content_section{
+  position: relative;
+}
+#content .content_section h2{
+  margin-top: 100px;
+  font-size: 1rem;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fcaf17;
+  color: white;
+  border-radius: 20px;
+}
+#content .content_section ul{
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+#content .content_section ul li{
+  width: 137px;
+  height: 190px;
+  margin-right: 10px;
+  text-indent: -9999px;
+  border-radius: 10px;
+  border: 1px solid rgb(219, 219, 219);
+}
+#content .content_section ul li a{
+  width: 137px;
+  height: 190px;
+  display: block;
+}
+#content .content_section ul li:last-child{
+  margin-right: 0;
+}
+
+
+#content #hobby ul li:nth-child(1){
+  background: url(../images/electAudio_hobby_1.png) no-repeat;
+}
+#content #hobby ul li:nth-child(2){
+  background: url(../images/electAudio_hobby_2.png) no-repeat;
+}
+#content #hobby ul li:nth-child(3){
+  background: url(../images/electAudio_hobby_3.png) no-repeat;
+}
+#content #hobby ul li:nth-child(4){
+  background: url(../images/electAudio_hobby_4.png) no-repeat;
+}
+#content #hobby ul li:nth-child(5){
+  background: url(../images/electAudio_hobby_5.png) no-repeat;
+}
+#content #hobby ul li:nth-child(6){
+  background: url(../images/electAudio_hobby_6.png) no-repeat;
+}
+
+#content #develop_self ul li:nth-child(1){
+  background: url(../images/electAudio_develop_self_1.png) no-repeat;
+}
+#content #develop_self ul li:nth-child(2){
+  background: url(../images/electAudio_develop_self_2.png) no-repeat;
+}
+#content #develop_self ul li:nth-child(3){
+  background: url(../images/electAudio_develop_self_3.png) no-repeat;
+}
+#content #develop_self ul li:nth-child(4){
+  background: url(../images/electAudio_develop_self_4.png) no-repeat;
+}
+#content #develop_self ul li:nth-child(5){
+  background: url(../images/electAudio_develop_self_5.png) no-repeat;
+}
+#content #develop_self ul li:nth-child(6){
+  background: url(../images/electAudio_develop_self_6.png) no-repeat;
+}
+
+#content #novel ul li:nth-child(1){
+  background: url(../images/electAudio_novel_1.png) no-repeat;
+}
+#content #novel ul li:nth-child(2){
+  background: url(../images/electAudio_novel_2.png) no-repeat;
+}
+#content #novel ul li:nth-child(3){
+  background: url(../images/electAudio_novel_3.png) no-repeat;
+}
+#content #novel ul li:nth-child(4){
+  background: url(../images/electAudio_novel_4.png) no-repeat;
+}
+#content #novel ul li:nth-child(5){
+  background: url(../images/electAudio_novel_5.png) no-repeat;
+}
+#content #novel ul li:nth-child(6){
+  background: url(../images/electAudio_novel_6.png) no-repeat;
+}
+
+#content #essay ul li:nth-child(1){
+  background: url(../images/electAudio_essay_1.png) no-repeat;
+}
+#content #essay ul li:nth-child(2){
+  background: url(../images/electAudio_essay_2.png) no-repeat;
+}
+#content #essay ul li:nth-child(3){
+  background: url(../images/electAudio_essay_3.png) no-repeat;
+}
+#content #essay ul li:nth-child(4){
+  background: url(../images/electAudio_essay_4.png) no-repeat;
+}
+#content #essay ul li:nth-child(5){
+  background: url(../images/electAudio_essay_5.png) no-repeat;
+}
+#content #essay ul li:nth-child(6){
+  background: url(../images/electAudio_essay_6.png) no-repeat;
+}
+
+#content .content_section .nextbtn{
+  display: flex;
+  justify-content: space-between;
+}
+#content .nextbtn button{
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+#content .nextbtn .left{
+  background: url(../images/leftBtn.png) no-repeat;
+  position: absolute;
+  top: 145px;
+  left: 0;
+}
+#content .nextbtn .right{
+  background: url(../images/rightBtn.png) no-repeat;
+  position: absolute;
+  top: 145px;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+/* footer시작 */
+footer{
+  clear: both;
+  margin-top: 100px;
+  background: url(../images/footer_bg.png) no-repeat;
+  padding: 0 30px;
+}
+#footCompany{
+  border-top: 1px solid #aaa;
+  padding-top: 45px;
+  height: 190px;
+}
+#footCompany #title{
+  width: 220px;
+  margin-left: 60px;
+  float: left;
+}
+#footCompany #company{
+  width: 220px;
+  float: left;
+}
+#footCompany dt{
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  color: #555;
+}
+#footCompany dd{
+  font-size: small;
+  line-height: 1.8em;
+}
+#footCompany a{
+  text-decoration: none;
+  color: #555;
+}
+
+#footCompany #info{
+  width: 280px;
+  float: left;
+}
+footer #sns ul{
+  width: 180px;
+  height: 50px;
+  float: left;
+  list-style: none;
+}
+footer #sns ul li{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
+}
+#address{
+  margin-top: 40px;
+  font-size: 12px;
+  color: #555;
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* footer 끝 */
