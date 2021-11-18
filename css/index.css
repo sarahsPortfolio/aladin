@@ -13,9 +13,32 @@ body{
   font-family: 'NanumSquare', sans-serif !important;
   background: url(../images/bar.png) no-repeat;
 }
-#wrap{
+.inner{
   width: 1024px;
   margin: 0 auto;
+}
+.clearfix:after{
+  clear: both;
+  content: "";
+  display: block;
+}
+a.btn{
+  background-color: #ccc;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+}
+.btn:hover{
+  background-color: #555;
+  color: white;
+}
+
+
+#wrap{
+  width: 100%;
+}
+header{
+  width: 100%;
 }
 header{
   height: 160px;
@@ -120,20 +143,79 @@ header nav li a:hover{
   color: white;
 }
 #banner{
-  clear: both;
+  width: 100%;
   height: 445px;
+  /* overflow: hidden; */
+  position: relative;
 }
+#banner ul.bannerList{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+#banner ul.bannerList li{
+  width: 100%;
+  height: 445px;
+  list-style: none;
+}
+/* slick-setting */
+.slick-list .slick-slide{
+  margin: 0px 10px;
+}
+.slick-list .slick-slide img{
+  width: 100%;
+}
+
+#banner ul.bannerList li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#banner ul.bannerList ul.slick-dots{
+  height: auto;
+  z-index: 99;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#banner ul.bannerList ul.slick-dots > li{
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 5px;
+}
+#banner ul.bannerList ul.slick-dots li button{
+  width: 15px;
+  height: 15px;
+  background-color: #191d24;
+  border-radius: 50%;
+  border: none;
+  text-indent: -9999px;
+  cursor: pointer;
+  font-size: 0;
+}
+#banner ul.bannerList ul.slick-dots li.slick-active button{
+  background-color: #fcaf17;
+}
+
+
 #bestSeller{
-  height: 516px;
-  padding: 50px 30px;
+  width: 100%;
+  height: auto;
+  padding: 50px;
 }
 #bestSeller h2{
   text-align: center;
   margin-bottom: 50px;
 }
 #bestSeller ul{
-  width: 893px;
+  width: 100%;
+  height: 100%;
   list-style: none;
+  position: relative;
 }
 #bestSeller ul li{
   width: 271px;
@@ -142,31 +224,21 @@ header nav li a:hover{
   float: left;    
   background-color: teal;
 }
-.btnSize{
-  display: inline-block;
-  /* width: 60px; */
-  height: 300px;
-  line-height: 300px;
-  /* background-color: #ccc; */
-  border-radius: 20px;
+#bestSeller ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
 }
-.btn{
-  background-color: #ccc;
-  border-radius: 20px;
-  padding: 5px;
-  text-decoration: none;
-  color: white;
-}
-.btn:hover{
-  background-color: #555;
-  color: white;
+#bestSeller a.btn{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 #newBook{
   height: 793px;
-  background: url("../images/newBook_bg.png") no-repeat;
-  background-size: cover;
+  background-color: #ebc502;
   padding: 50px 0;
-  position: relative;
 }
 #newBook h2{
   text-align: center;
@@ -175,6 +247,8 @@ header nav li a:hover{
 #newBook ul{
   list-style: none;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 #newBook ul li{
   width: 189px;
@@ -182,6 +256,11 @@ header nav li a:hover{
   background-color: white;
   box-shadow: 3px 3px 3px #aaa;
   border-radius: 30px;
+}
+#newBook ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 #newBook ul li:nth-child(4){
   width: 377px;
@@ -226,11 +305,12 @@ header nav li a:hover{
   top: 388px ;
   left: 617px;
 }
-#newBook div{
+#newBook a.btn{
   position: absolute;
-  top: 530px;
-  left: 818px;
+  right: 70px;
+  top: 460px;
 }
+
 #galaxy{
   height: 560px;
   background: url("../images/galaxyBanner_bg.png") no-repeat fixed;
@@ -239,6 +319,7 @@ header nav li a:hover{
 
 
 #banner_2{
+  width: 100%;
   height: 524px;
   padding: 100px 0 0 0;
 }
@@ -277,14 +358,21 @@ header nav li a:hover{
   text-align: center;
   margin-bottom: 50px;
 }
+#goods ul{
+  position: relative;
+}
 #goods li{
   width: 160px;
   height: 160px;
   border-radius: 80px;
   list-style: none;
   margin-right: 18px;
-  background-color: aqua;
   float: left;
+}
+#goods ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 #goods li p{
   font-size: small;
@@ -292,7 +380,6 @@ header nav li a:hover{
   margin-top: 170px;
   text-align: center;
 }
-
 #goods li{
   text-decoration: none;
   color: black;
@@ -301,13 +388,11 @@ header nav li a:hover{
   text-decoration: none;
   color: #ba3d7b ;
 }
-
-
-
-#goods .btnSize{
+#goods .btn{
   position: absolute;
-  top: 70px;
-  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
 }
 
 #G_thum1{
@@ -325,9 +410,13 @@ header nav li a:hover{
 #G_thum5{
   background: url(../images/goods_thum5.png) no-repeat;
 }
+
 #offlineShop{
-  height: 541px;
-  background: url(../images/offlineShop_bg.png) no-repeat;
+  width: 100%;
+  height: auto;
+  background: url(../images/offlineShop_bg.png) no-repeat center;
+  background-size: 100%;
+  background-position-y: 100%;
   padding-top: 50px;
 }
 #offlineShop h2{
@@ -335,8 +424,8 @@ header nav li a:hover{
   margin-bottom: 50px;
 }
 #map{
-  width: 750px;
-  height: 300px;
+  width: 1200px;
+  height: 400px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
