@@ -27,6 +27,7 @@ function hobby(){
 
   //버튼이벤트
   $('.right').on('click', onNextSlide)
+  $('.left').on('click', onPrevSlide)
 
 
   function onNextSlide(){
@@ -49,12 +50,13 @@ function hobby(){
 
     // 2. 백그라운드 No를   var currentBook = 1; 를 이용하여 png파일의 숫자를 변경해주는 것
 
+    )}//onNextSlide
 
-    )}
+    function onPrevSlide(){
+      $hobbyUl.stop().animate({'marginLeft' : 0}, 500, function(){
+        $hobbyUl.children().last().prependTo($hobbyUl);
+        $hobbyUl.css({'marginLeft': -$hobbyLi})
+      })
+    }
 
-
-
-
-
-
-}
+}//hobby

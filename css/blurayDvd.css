@@ -166,6 +166,7 @@ header nav li a:hover{
   background-color: turquoise;
   border-radius: 10px;
   text-indent: -9999px;
+  cursor: pointer;
 }
 #recentMusic #newMusicList li:nth-child(1){
   background: url(../images/newMusicList_thum1.png) no-repeat;
