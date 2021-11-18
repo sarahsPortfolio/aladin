@@ -158,8 +158,7 @@ header nav li a:hover{
   display: inline-block;
   color: black;
 }
-#bigMenu ul li a:hover,
-#bigMenu ul li a.selected{
+#bigMenu ul li a:hover{
   color: #ee3d96;
   font-weight: bold;
 }
@@ -169,7 +168,6 @@ header nav li a:hover{
   background-color: #ccc;
   border-radius: 25px;
   margin: 0 auto;
-  overflow: hidden;
 }
 #smallMenu ul{
   list-style: none;
